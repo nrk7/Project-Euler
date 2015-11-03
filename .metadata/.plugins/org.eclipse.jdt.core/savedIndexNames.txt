@@ -1,0 +1,2 @@
+INDEX VERSION 1.127+/Users/kattaguy/Documents/Programming/Project-Euler/.metadata/.plugins/org.eclipse.jdt.core
+483078511.index

@@ -1,0 +1,36 @@
+/**
+ * 
+ */
+
+/**
+ * @author Nitish Katta
+ * Created on 2/17/13
+ * This program will find the sum of the even-numbered fibonacci numbers up to 4 million
+ *
+ */
+public class Problem2 {
+
+	public static void main(String[] args) {
+		int z = 0;
+		int total = 0;
+		
+		while(fibonacci(z) < 4000000) {
+			if (fibonacci(z) % 2 == 0) {
+				total += fibonacci(z);
+			}
+			z++;
+		}
+		
+		System.out.println(total);
+	}
+	public static int fibonacci(int x) {
+		if (x==0) {
+			return 0;
+		} else if (x==1) {
+			return 1;
+		} else {
+			return fibonacci(x-1) + fibonacci(x-2);
+		}
+	}
+
+}
